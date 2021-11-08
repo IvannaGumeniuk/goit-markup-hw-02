@@ -33,7 +33,7 @@
   margin: -1px;
 }
 
-.current {
+.header-item-link-current {
   color: var(--color-accent);
 }
 
