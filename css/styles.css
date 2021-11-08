@@ -9,6 +9,7 @@
   --btn-text-color: #ffffff;
   --footer-logo-color: #ffffff;
   --filter-btn-color: #212121;
+  --filter-btn-bgr: #F5F4FA;
 }
 
 .list {
@@ -32,8 +33,13 @@
   margin: -1px;
 }
 
+.current {
+  color: var(--color-accent);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
 }
 
 /* ----------------------------HEADER---------------------------*/
@@ -109,6 +115,12 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--btn-text-color);
+  background-color: var(--color-accent);
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
 }
 
 /* ----------------------------ADVANTAGES---------------------------*/
@@ -125,7 +137,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
 }
 /* ----------------------------WORK---------------------------*/
 .work-title,
@@ -152,7 +163,6 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
 }
 /* ----------------------------FOOTER---------------------------*/
 .footer {
@@ -173,6 +183,11 @@ body {
   color: var(--tex-address-color);
 }
 
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--color-accent);
+}
+
 /* ----------------------------PORTFOLIO PAGE---------------------------*/
 
 .filter-btn {
@@ -183,12 +198,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--filter-btn-color);
+  background-color: var(--filter-btn-bgr);
+  cursor: pointer;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   color: var(--btn-text-color);
-}
+  background-color: var(--color-accent);
 
 .filter-title {
   font-weight: 700;
@@ -199,13 +216,7 @@ body {
 }
 
 .filter-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
-}
-
-. filter {
-  cursor: pointer;
 }
